@@ -8,6 +8,8 @@ The core innovation is the discovery of a **"phonetic boundary"**: perturbations
 ## System Architecture
 The framework processes audio through two parallel verification branches:
 
+![DeepfakeDetector Workflow](images/Workflow_deepfake.png)
+
 ### 1. Acoustic Discriminator (ResNet18 + Bi-GRU)
 A hybrid architecture designed to capture both instantaneous spectral anomalies and long-range prosodic inconsistencies.
 * **Backbone**: A ResNet18 pre-trained on ImageNet serves as the spatial feature extractor for 2-channel Mel spectrograms.
